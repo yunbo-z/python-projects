@@ -48,7 +48,7 @@ elif user_choice > computer_choice:
   print("You win!")
 elif computer_choice == user_choice:
   print("It's a draw")
-
+ 
 ####### Debugging challenge: #########
 #Try running this code and type 5.
 #It will give you an IndexError and point to line 32 as the issue.
