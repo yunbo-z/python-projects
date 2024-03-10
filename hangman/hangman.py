@@ -1,10 +1,11 @@
 import random
+from hangman_art import logo
 # pick a random word
 # show the underscore of each alphabet
 # 6 ballons
 Christmas_WinterHolidays = ['Christmas tree', 'Wreath', 'Stocking', 'Eggnog', 'Gingerbread', 'Yule log', 'Hanukkah', 'Kwanzaa', 'New Year’s Eve', 'Winter solstice']
 
-
+print(logo)
 print('Welcome to this hangman game!')
 word = random.choice(Christmas_WinterHolidays).upper()
 alphabet_space_list = []
@@ -31,4 +32,4 @@ while total_alphabet < len(word):
             print('DEAD!')
             print(f"The correct word is '{word}'")
             break
-    print(alphabet_space_list)
+    print(f"{' '.join(alphabet_space_list)}")
